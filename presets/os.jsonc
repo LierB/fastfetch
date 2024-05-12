@@ -1,0 +1,58 @@
+//   _____ _____ _____ _____ _____ _____ _____ _____ _____ 
+//  |   __|  _  |   __|_   _|   __|   __|_   _|     |  |  |
+//  |   __|     |__   | | | |   __|   __| | | |   --|     |
+//  |__|  |__|__|_____| |_| |__|  |_____| |_| |_____|__|__|  OS
+//
+//  by Bina
+
+
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "source": "arch_small", // search for logos: fastfetch --list-logos or --print-logos
+        "padding": {
+	        "top": 1
+	},
+    },
+    "display": {
+        "separator": "  "
+    },
+    "modules": [
+	"break",
+	"title",
+        {
+            "type": "os",
+            "key": "os    ",
+            "keyColor": "33",  // = color3
+        },
+        {
+            "type": "kernel",
+            "key": "kernel",
+            "keyColor": "33",
+        },
+        {
+            "type": "host",
+            "format": "{5} {1}",
+            "key": "host  ",
+            "keyColor": "33",
+        },
+        {
+            "type": "packages",
+            "format": "{} (pacman)",
+            "key": "pkgs  ",
+            "keyColor": "33",  
+        },
+        {
+            "type": "uptime",
+            "format": "{2}h {3}m",
+            "key": "uptime",
+            "keyColor": "33",
+        },
+        {
+            "type": "memory",
+            "key": "memory",
+            "keyColor": "33",
+        },
+        "break",
+    ]
+}
